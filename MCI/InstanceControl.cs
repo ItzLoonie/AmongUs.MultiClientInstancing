@@ -123,7 +123,7 @@ public static class InstanceControl
         yield return AmongUsClient.Instance.CreatePlayer(sampleC);
 
         sampleC.Character.SetName(MCIPlugin.IKnowWhatImDoing ? $"Bot {{{sampleC.Character.PlayerId}:{sampleId}}}" : $"Bot {sampleC.Character.PlayerId}");
-        sampleC.Character.SetSkin("");
+        sampleC.Character.SetSkin("", 0);
         sampleC.Character.SetNamePlate("");
         sampleC.Character.SetPet("");
         sampleC.Character.SetColor(Random.Range(0, Palette.PlayerColors.Length));
