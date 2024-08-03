@@ -123,12 +123,12 @@ public static class InstanceControl
         yield return AmongUsClient.Instance.CreatePlayer(sampleC);
 
         sampleC.Character.SetName(MCIPlugin.IKnowWhatImDoing ? $"Bot {{{sampleC.Character.PlayerId}:{sampleId}}}" : $"Bot {sampleC.Character.PlayerId}");
-        sampleC.Character.SetSkin(HatManager.Instance.allSkins[Random.Range(0, HatManager.Instance.allSkins.Count)].ProdId, 0);
-        sampleC.Character.SetNamePlate(HatManager.Instance.allNamePlates[Random.RandomRangeInt(0, HatManager.Instance.allNamePlates.Count)].ProdId);
-        sampleC.Character.SetPet(HatManager.Instance.allPets[Random.RandomRangeInt(0, HatManager.Instance.allPets.Count)].ProdId);
+        sampleC.Character.SetSkin("");
+        sampleC.Character.SetNamePlate("");
+        sampleC.Character.SetPet("");
         sampleC.Character.SetColor(Random.Range(0, Palette.PlayerColors.Length));
-        sampleC.Character.SetHat("hat_NoHat", 0);
-        sampleC.Character.SetVisor("visor_EmptyVisor", 0);
+        sampleC.Character.SetHat("", 0);
+        sampleC.Character.SetVisor("", 0);
 
         Clients.Add(sampleId, sampleC);
         PlayerClientIDs.Add(sampleC.Character.PlayerId, sampleId);
